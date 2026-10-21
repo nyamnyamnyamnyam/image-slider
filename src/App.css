@@ -4,7 +4,7 @@
 body {
   margin: 0;
   min-height: 100vh;
-  background-color: #ffffff;
+  background: #fff;
   font-family: Arial, sans-serif;
 }
 
@@ -15,11 +15,11 @@ body {
 }
 
 .gallery {
-  box-sizing: border-box;
   width: 100%;
   max-width: 520px;
+  box-sizing: border-box;
   padding: 14px 24px 8px;
-  background-color: #d5faf0;
+  background: #d5faf0;
   border-radius: 6px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
 }
@@ -29,8 +29,12 @@ body {
   margin-bottom: 12px;
 }
 
-.gallery-header h1 {
+.gallery-header h1,
+.gallery-header p {
   margin: 0;
+}
+
+.gallery-header h1 {
   font-size: 18px;
   font-weight: bold;
   color: #173d3e;
@@ -54,27 +58,29 @@ body {
 .gallery-controls {
   display: flex;
   justify-content: space-between;
+  padding: 8px 0;
+
+}
+
+.navigation-button {
+  display: flex;
   align-items: center;
-  padding-top: 9px;
+  justify-content: center;
+  border: 1px solid white;
+  border-radius: 20px;
+  background: #f5f5f5;
+  width: 30px;
+  height: 30px;
+
 }
 
-.gallery-controls .navigation-button {
-  min-width: 28px;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  background-color: white;
-  border: 1px solid #b9d3d0;
-  color: #315d58;
-  padding: 0;
-}
-
-.gallery-controls .navigation-button:hover {
-  background-color: #effffb;
+.navigation-button:hover {
+  background: #effffb;
 }
 
 @media (max-width: 400px) {
   .gallery {
-    padding: 14px 14px 9px;
+    padding: 14px;
+    padding-bottom: 9px;
   }
 }
