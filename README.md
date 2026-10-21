@@ -19,7 +19,15 @@ Egyszerű React képgaléria a feladat mintaképe alapján.
 
 ## Publikálás
 
-A Netlify-on a projektet a GitHub-repóhoz csatlakoztatva lehet publikálni. A build parancs `npm run build`, a publikálandó mappa `dist`.
+A projektben már van egy helyi Git-commit. GitHub-ra feltöltéshez hozz létre egy üres repót, majd futtasd a következőket a projekt mappájában:
+
+```bash
+git branch -M main
+git remote add origin https://github.com/FELHASZNALONEV/REPO-NEVE.git
+git push -u origin main
+```
+
+A GitHubon tárolt repót a Netlify-on az **Add new project → Import an existing project** menüben tudod csatlakoztatni. A build parancs `npm run build`, a publikálandó mappa `dist`.
 
 **Publikált Netlify-oldal:** még nincs publikálva; ide kell beírni a Netlify által adott linket.
 
